@@ -2,7 +2,6 @@ import Button from "@/components/Button";
 import Home from "./sections/Home";
 import Venue from "./sections/Venue";
 import Accommodations from "./sections/Accommodations";
-import ThingsToDo from "./sections/ThingsToDo";
 
 export default function Page() {
   return (

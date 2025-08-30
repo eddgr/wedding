@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+h1,
+h2,
+h3 {
+  font-family: --font-cormorant, serif;
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: -0.04em;
+  color: #201f19;
+  font-size: 4rem;
+  line-height: 1.1;
+  /* Mobile-first styles */
+  @media (max-width: 768px) {
+    font-size: 2.5rem; /* Smaller size for mobile */
+    line-height: 1.2; /* Tighter line height for mobile */
+  }
+}
+
+body {
+  font-family: --font-lato, sans-serif;
+  letter-spacing: 0;
+  color: #47423c;
+}
+
+.logo {
+  font-family: --font-cormorant, serif;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  font-size: 2rem;
+}
+
+.rsvp {
+  font-family: --font-lato, sans-serif;
+  text-transform: uppercase;
+  background-color: #e6be8a;
+  border: #b5894f 1px solid;
+  color: #47423c;
+  letter-spacing: 1px;
+  padding: 1rem 4rem;
+  font-weight: 700;
+  transition:
+    background-color 0.3s ease-in-out,
+    color 0.3s ease-in-out;
+}
+
+.rsvp:hover {
+  background-color: #b4894f;
+  color: #fff;
+}
+
+.rsvp-text {
+  margin: 1rem 0;
+  font-style: italic;
+}
+
+p {
+  padding: 0 0.25rem;
+}

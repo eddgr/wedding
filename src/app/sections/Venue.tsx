@@ -24,16 +24,12 @@ const VenueSection = ({
 
   const textColumn = (
     <div className="flex flex-col justify-center text-center md:text-left">
-      <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-        {title}
-      </h2>
-      <p className="mt-4 text-xl font-semibold">{name}</p>
+      <h2>{title}</h2>
+      <p className="mt-10 font-bold">{name}</p>
       {address.map((line, index) => (
-        <p key={index} className="text-lg">
-          {line}
-        </p>
+        <p key={index}>{line}</p>
       ))}
-      <p className="mt-6 text-lg leading-8 text-gray-600">{description}</p>
+      <p className="mt-4">{description}</p>
     </div>
   );
 
@@ -64,15 +60,6 @@ const VenueSection = ({
 export default function VenuePage() {
   return (
     <section className="py-12">
-      <div className="text-center mb-12">
-        <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-          Venue
-        </h1>
-        <p className="mt-6 text-lg leading-8 text-gray-600">
-          Where the magic happens.
-        </p>
-      </div>
-
       <VenueSection
         title="Wedding Ceremony"
         name="Gizella Kopsick Palm Arboretum"

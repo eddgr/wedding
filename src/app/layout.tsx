@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 import { cormorant, lato } from "./fonts";
 
 export const metadata: Metadata = {
-  title: "Viv & Edgar's Wedding",
+  title: "Vivian & Edgar's Wedding",
   description: "February 6, 2026 @ Gizella Kopsick Arboretum",
 };
 
@@ -18,7 +18,6 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${cormorant.variable} ${lato.variable} antialiased`}>
         <div className="flex flex-col min-h-screen">
-          <Header />
           <main className="flex-grow container mx-auto px-4">{children}</main>
           <Footer />
         </div>

@@ -3,7 +3,7 @@
 h1,
 h2,
 h3 {
-  font-family: --font-cormorant, serif;
+  font-family: var(--font-cormorant), sans-serif;
   font-weight: 700;
   font-style: italic;
   letter-spacing: -0.04em;
@@ -18,20 +18,20 @@ h3 {
 }
 
 body {
-  font-family: --font-lato, sans-serif;
+  font-family: var(--font-lato), serif;
   letter-spacing: 0;
   color: #47423c;
 }
 
 .logo {
-  font-family: --font-cormorant, serif;
+  font-family: var(--font-cormorant), sans-serif;
   font-weight: 700;
   letter-spacing: -0.04em;
   font-size: 2rem;
 }
 
 .rsvp {
-  font-family: --font-lato, sans-serif;
+  font-family: var(--font-lato), serif;
   text-transform: uppercase;
   background-color: #e6be8a;
   border: #b5894f 1px solid;

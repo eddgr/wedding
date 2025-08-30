@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { cormorant, lato } from "./fonts";
 
 export const metadata: Metadata = {
   title: "Viv & Edgar's Wedding",
@@ -15,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={"antialiased"}>
+      <body className={`${cormorant.variable} ${lato.variable} antialiased`}>
         <div className="flex flex-col min-h-screen">
           <Header />
           <main className="flex-grow container mx-auto px-4">{children}</main>

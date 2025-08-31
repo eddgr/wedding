@@ -18,7 +18,7 @@ export default function Home() {
           </div>
 
           {/* Content Column */}
-          <div className="w-full md:w-2/3 text-center md:text-left">
+          <div className="w-full text-center md:text-left">
             <h1>We're getting married & you're invited!</h1>
             <p className="mt-10">
               Join us <strong>February 6, 2026</strong> at{" "}

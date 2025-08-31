@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "eslint",
     "postbuild": "touch ./out/.nojekyll",
-    "deploy": "yarn build && gh-pages -d out --dotfiles"
+    "deploy": "yarn build && gh-pages -d out --dotfiles --user 'Edgar Ong <emailedgar@gmail.com>'"
   },
   "dependencies": {
     "next": "15.5.2",

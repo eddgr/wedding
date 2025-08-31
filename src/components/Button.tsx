@@ -8,7 +8,11 @@ interface ButtonProps {
 
 const Button: React.FC<ButtonProps> = ({ href, children, className }) => {
   return (
-    <Link href={href} className={`inline-block rounded-lg ${className}`}>
+    <Link
+      href={href}
+      className={`inline-block rounded-lg ${className}`}
+      target="blank"
+    >
       {children}
     </Link>
   );

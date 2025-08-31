@@ -16,8 +16,7 @@ const VenueSection = ({
 }) => {
   // TODO: Make sure to add your Google Maps API key to your environment variables
   // The variable should be named NEXT_PUBLIC_GOOGLE_MAPS_API_KEY
-  const apiKey =
-    process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || "YOUR_GOOGLE_MAPS_API_KEY";
+  const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY;
   const mapSrc = `https://www.google.com/maps/embed/v1/place?q=${encodeURIComponent(
     mapQuery,
   )}&key=${apiKey}`;

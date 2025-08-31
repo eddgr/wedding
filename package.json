@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "postbuild": "touch ./out/.nojekyll",
+    "deploy": "yarn build && gh-pages -d out --dotfiles"
   },
   "dependencies": {
     "next": "15.5.2",
@@ -22,6 +24,7 @@
     "autoprefixer": "^10.4.21",
     "eslint": "^9",
     "eslint-config-next": "15.5.2",
+    "gh-pages": "^6.3.0",
     "tailwindcss": "^4.1.12",
     "typescript": "^5"
   }

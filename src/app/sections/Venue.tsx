@@ -17,9 +17,9 @@ export default function VenuePage() {
       <Section
         title="Reception"
         name="TBD"
-        address={["TBD", "TBD"]}
+        // address={["TBD", "TBD"]}
         description="Join us for lunch and drinks following the ceremony."
-        mapQuery="TBD"
+        mapQuery="St. Petersburg, FL"
         reverse={true}
       />
     </section>

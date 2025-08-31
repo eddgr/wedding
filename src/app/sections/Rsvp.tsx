@@ -9,7 +9,9 @@ export default function Rspv() {
       >
         RSVP
       </Button>
-      <p className="rsvp-text mx-2">Please RSVP as soon as possible.</p>
+      <p className="rsvp-text mx-2">
+        Please respond by <u>November 26, 2025</u>.
+      </p>
     </div>
   );
 }

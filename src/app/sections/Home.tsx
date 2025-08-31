@@ -4,11 +4,12 @@ import veggy from "@/assets/images/veggy-square.gif";
 
 export default function Home() {
   return (
-    <div className="py-12">
+    <div className="pb-12">
       <div className="container mx-auto">
-        <div className="flex flex-col md:flex-row md:items-center md:gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
+          {/*<div className="flex flex-col md:flex-row md:items-center md:gap-12">*/}
           {/* Image Column */}
-          <div className="w-full md:w-1/3 mb-8 md:mb-0">
+          <div className="w-full">
             <Image
               src={veggy}
               alt="Placeholder image for the wedding"

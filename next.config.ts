@@ -8,6 +8,7 @@ const nextConfig: NextConfig = {
   output: "export", // Enables static export
   assetPrefix: assetPrefix,
   basePath: basePath,
+  distDir: "docs",
   images: {
     unoptimized: true, // Disables Next.js image optimization, which is required for static export
   },

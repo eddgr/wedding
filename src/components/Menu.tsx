@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, RefObject } from "react";
 
 export default function Menu({
   isOpen,
@@ -48,13 +48,17 @@ export default function Menu({
   );
 }
 
-function useOnClickOutside(ref, handler) {
+function useOnClickOutside(
+  ref: RefObject<HTMLDivElement | null>,
+  handler: () => void,
+) {
   useEffect(() => {
-    const listener = (event) => {
-      if (!ref.current || ref.current.contains(event.target)) {
+    const listener = (event: MouseEvent | TouchEvent) => {
+      const el = ref.current;
+      if (!el || el.contains(event.target as Node)) {
         return;
       }
-      handler(event);
+      handler();
     };
     document.addEventListener("mousedown", listener);
     document.addEventListener("touchstart", listener);

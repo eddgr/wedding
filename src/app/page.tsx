@@ -2,6 +2,7 @@ import Divider from "@/components/Divider";
 import Home from "./sections/Home";
 import Venue from "./sections/Venue";
 import Accommodations from "./sections/Accommodations";
+import FaqPage from "./sections/Faq";
 import Rsvp from "./sections/Rsvp";
 
 export default function Page() {
@@ -14,6 +15,8 @@ export default function Page() {
       <Rsvp />
       <Divider />
       <Accommodations />
+      <Divider />
+      <FaqPage />
     </>
   );
 }

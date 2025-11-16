@@ -1,8 +1,8 @@
 export default function AccommodationsPage() {
   return (
-    <div className="py-12">
+    <div id="accommodations" className="py-12">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
-        <div>
+        <div className="text-center md:text-left">
           <h2>Accommodations</h2>
           <p className="mt-10">
             We recommend staying around the Downtown and Grand Central District

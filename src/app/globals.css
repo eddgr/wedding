@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 h1,
 h2,
 h3 {
@@ -51,6 +55,10 @@ body {
 .rsvp-text {
   margin: 1rem 0;
   font-style: italic;
+}
+
+.rsvp-border {
+  border-bottom: 2px solid #e6be8a;
 }
 
 .recommendations {

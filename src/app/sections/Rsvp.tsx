@@ -1,3 +1,4 @@
+// Disabled because RSVP period is over.
 import Button from "@/components/Button";
 
 export default function Rspv() {

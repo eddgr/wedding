@@ -15,12 +15,11 @@ export default function VenuePage() {
 
       <hr className="my-8 border-gray-200" />
 
-      {/* TODO: Replace with your actual reception venue details */}
       <div id="reception">
         <Section
           title="Reception"
-          name="TBD"
-          // address={["TBD", "TBD"]}
+          name="Juno & The Peacock"
+          address={["400 Beach Drive NE", "St. Petersburg, FL 33701"]}
           description="Join us for lunch and drinks following the ceremony."
           mapQuery="St. Petersburg, FL"
           reverse={true}

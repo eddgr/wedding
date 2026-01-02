@@ -3,7 +3,6 @@ import Home from "./sections/Home";
 import Venue from "./sections/Venue";
 import Accommodations from "./sections/Accommodations";
 import FaqPage from "./sections/Faq";
-import Rsvp from "./sections/Rsvp";
 
 export default function Page() {
   return (
@@ -11,8 +10,6 @@ export default function Page() {
       <Home />
       <Divider />
       <Venue />
-      <Divider />
-      <Rsvp />
       <Divider />
       <Accommodations />
       <Divider />

@@ -28,12 +28,6 @@ export default function Header() {
         <a href="#faq" className="mx-4">
           FAQ
         </a>
-        <a
-          href="https://docs.google.com/forms/d/e/1FAIpQLSexi1ygLEJ436agoeJfkVus5KSLInBj0-vZuDaZ6LcX2TZQ2w/viewform?usp=header"
-          className="ml-4 font-bold rsvp-border"
-        >
-          RSVP
-        </a>
       </div>
       <div className="md:hidden">
         <button onClick={toggleMenu}>

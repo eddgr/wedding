@@ -35,14 +35,6 @@ export default function Menu({
         <a href="#faq" className="m-4" onClick={onClose}>
           FAQ
         </a>
-        <a
-          href="https://docs.google.com/forms/d/e/1FAIpQLSexi1ygLEJ436agoeJfkVus5KSLInBj0-vZuDaZ6LcX2TZQ2w/viewform?usp=header"
-          className="m-4 mb-8 font-bold rsvp-border"
-          target="blank"
-          onClick={onClose}
-        >
-          RSVP
-        </a>
       </div>
     </div>
   );

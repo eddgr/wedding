@@ -21,7 +21,7 @@ export default function VenuePage() {
           name="Juno & The Peacock"
           address={["400 Beach Drive NE", "St. Petersburg, FL 33701"]}
           description="Join us for lunch and drinks following the ceremony."
-          mapQuery="St. Petersburg, FL"
+          mapQuery="Juno & The Peacock, St. Petersburg, FL"
           reverse={true}
         />
       </div>

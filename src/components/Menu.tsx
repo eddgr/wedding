@@ -29,8 +29,8 @@ export default function Menu({
         <a href="#reception" className="m-4" onClick={onClose}>
           Reception
         </a>
-        <a href="#accommodations" className="m-4" onClick={onClose}>
-          Accommodations
+        <a href="#registry" className="m-4" onClick={onClose}>
+          Wedding Registry
         </a>
         <a href="#faq" className="m-4" onClick={onClose}>
           FAQ

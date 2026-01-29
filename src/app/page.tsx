@@ -1,7 +1,7 @@
 import Divider from "@/components/Divider";
 import Home from "./sections/Home";
 import Venue from "./sections/Venue";
-import Accommodations from "./sections/Accommodations";
+import RegistryPage from "./sections/Registry";
 import FaqPage from "./sections/Faq";
 
 export default function Page() {
@@ -11,7 +11,7 @@ export default function Page() {
       <Divider />
       <Venue />
       <Divider />
-      <Accommodations />
+      <RegistryPage />
       <Divider />
       <FaqPage />
     </>

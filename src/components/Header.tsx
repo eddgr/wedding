@@ -22,8 +22,8 @@ export default function Header() {
         <a href="#reception" className="mx-4">
           Reception
         </a>
-        <a href="#accommodations" className="mx-4">
-          Accommodations
+        <a href="#registry" className="mx-4">
+          Wedding Registry
         </a>
         <a href="#faq" className="mx-4">
           FAQ

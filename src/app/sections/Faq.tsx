@@ -1,4 +1,4 @@
-export default function FaqPage() {
+export default function Page() {
   const faqs = [
     {
       question: "Are children welcome?",

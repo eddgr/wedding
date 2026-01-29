@@ -7,11 +7,17 @@ export default function RegistryPage() {
   const qr = [
     {
       img: registryLeft,
-      caption: "Disney Cruise!",
+      text: "Go all out on a",
+      emoji: "🛳️",
+      caption: "Disney Cruise",
+      url: "https://venmo.com/u/eddgr",
     },
     {
       img: registryRight,
+      text: "Or relax at a",
+      emoji: "🐾",
       caption: "Japan Onsen & Doggy Inn Stay",
+      url: "https://venmo.com/u/Vivian-Kong",
     },
   ];
 
@@ -25,9 +31,16 @@ export default function RegistryPage() {
           via Venmo:
         </p>
       </div>
-      <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-10">
+      <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-10 text-center">
         {qr.map((qrCode, index) => (
           <div key={index}>
+            <p>{qrCode.text}</p>
+            <p className="font-bold">
+              {qrCode.emoji} {qrCode.caption}
+            </p>
+            <p className="font-bold mb-8">
+              (<a href={qrCode.url}>{qrCode.url}</a>)
+            </p>
             <Image src={qrCode.img} alt={qrCode.caption} />
           </div>
         ))}

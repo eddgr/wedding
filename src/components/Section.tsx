@@ -1,3 +1,8 @@
+type DescriptionList = {
+  time: string;
+  text: string;
+};
+
 const Section = ({
   title,
   name,
@@ -11,7 +16,7 @@ const Section = ({
   name: string;
   address?: string[];
   description?: string;
-  descriptionList?: string[];
+  descriptionList?: DescriptionList[];
   mapQuery?: string;
   reverse?: boolean;
 }) => {

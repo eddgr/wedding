@@ -3,6 +3,7 @@ const Section = ({
   name,
   address,
   description,
+  descriptionList = [],
   mapQuery,
   reverse = false,
 }: {
@@ -10,17 +11,28 @@ const Section = ({
   name: string;
   address?: string[];
   description?: string;
+  descriptionList?: string[];
   mapQuery?: string;
   reverse?: boolean;
 }) => {
   const textColumn = (
     <div className="flex flex-col justify-center text-center md:text-left">
       <h2>{title}</h2>
-      <p className="mt-10 font-bold">{name}</p>
-      {address?.map((line, index) => (
-        <p key={index}>{line}</p>
-      ))}
-      <p className="mt-4">{description}</p>
+      <div>
+        <p className="mt-10 font-bold">{name}</p>
+        {address?.map((line, index) => (
+          <p key={index}>{line}</p>
+        ))}
+        {description && <p className="mt-4">{description}</p>}
+      </div>
+      <div className="mt-4">
+        {descriptionList?.map((listItem, index) => (
+          <div key={index} className="mt-4">
+            <p className="font-bold">{listItem.time}</p>
+            <p>{listItem.text}</p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 

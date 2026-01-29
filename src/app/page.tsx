@@ -12,8 +12,6 @@ export default function Page() {
       <Venue />
       <Divider />
       <RegistryPage />
-      <Divider />
-      <FaqPage />
     </>
   );
 }

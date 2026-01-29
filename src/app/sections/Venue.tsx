@@ -8,7 +8,17 @@ export default function VenuePage() {
           title="Wedding Ceremony"
           name="Gizella Kopsick Palm Arboretum"
           address={["605 11th Ave N", "St. Petersburg, FL 33701"]}
-          description="We are doing an outdoor ceremony and it will begin at 11:00 AM. We recommend arriving 30 minutes before starting. There will be free parking on premises."
+          descriptionList={[
+            {
+              time: "10:15 AM - 10:30 AM",
+              text: "Arrive and get seated (free parking on premise).",
+            },
+            { time: "11:00 AM", text: "Ceremony begins." },
+            {
+              time: "11:30 AM - 12:15 PM",
+              text: "Photos! A photographer will be on-site.",
+            },
+          ]}
           mapQuery="Gizella Kopsick Arboretum, St. Petersburg, FL"
         />
       </div>
